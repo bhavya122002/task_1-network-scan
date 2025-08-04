@@ -12,10 +12,14 @@ Using nmap to scan open ports in the system.
 5. Identified open ports and noted potential security risks
 
 
-Risks associated with the found open ports.
+## Risks associated with the found open ports.
 |   Port   |      Service        |                                    Risk                                            |
 | -------- | ------------------- | ---------------------------------------------------------------------------------- |
 | 135/tcp  | msrpc               | Can be exploited for remote code execution or service enumeration.                 |
 | 139/tcp  | netbios-ssn         | Allows NetBIOS attacks like file share enumeration or SMB session hijacking.       |
 | 445/tcp  | microsoft-ds        | Highly targeted by ransomware and worms; used for SMB which can allow RCE.         |
 | 5357/tcp | ws-discovery/wsdapi | May leak device details and expose the host to local privilege escalation threats. |
+
+
+## Outcome
+Learned how to scan a network and analyze services for potential exposure.
